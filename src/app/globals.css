@@ -2,32 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --background: 220 23.077% 94.902%; /* base */
+    --foreground: 233.793 16.022% 35.49%; /* text */
+    --card: 40 100% 50%; /* kuning terang */
+    --card-foreground: 0 0% 0%; /* hitam */
+    --popover: 0 0% 100%; /* putih */
+    --popover-foreground: 0 0% 0%; /* hitam */
+    --primary: 220 100% 50%; /* biru terang */
+    --primary-foreground: 0 0% 100%; /* putih */
+    --secondary: 340 100% 50%; /* merah terang */
+    --secondary-foreground: 0 0% 100%; /* putih */
+    --muted: 0 0% 90%; /* abu-abu terang */
+    --muted-foreground: 0 0% 0%; /* hitam */
+    --accent: 120 100% 50%; /* hijau terang */
+    --accent-foreground: 0 0% 100%; /* putih */
+    --destructive: 0 100% 50%; /* merah terang */
+    --destructive-foreground: 0 0% 100%; /* putih */
+    --border: 0 0% 0%; /* hitam */
+    --input: 0 0% 90%; /* abu-abu terang */
+    --ring: 220 100% 50%; /* biru terang */
+    --radius: 0; /* tanpa sudut bulat */
+    --chart-1: 12 100% 50%; /* oranye terang */
+    --chart-2: 173 100% 50%; /* hijau terang */
+    --chart-3: 197 100% 50%; /* cyan terang */
+    --chart-4: 43 100% 50%; /* kuning terang */
+    --chart-5: 27 100% 50%; /* oranye terang */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  body {
+    @apply bg-background text-text font-courier;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold uppercase font-courier;
+  }
+
+  p, a, label, button{
+    @apply font-courier;
+  } 
+
+  input, textarea, select {
+    @apply bg-white border-6 border-black p-2 font-courier;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer utilities{
+  .neo{
+    @apply mb-[3px] mr-[3px] border-2 font-courier border-black p-4 shadow-neo;
+  }
+
+  .neo-pressed{
+    @apply  translate-x-[1px] translate-y-[1px] shadow-neo-hover;
+  }
+
+  .neo-active:active{
+    @apply neo-pressed;
+  }
+  .neo-focus:focus{
+    @apply focus-visible:neo-pressed;
+  }
+  .neo-hover:hover{
+    @apply neo-pressed transition-all duration-200;
   }
 }
