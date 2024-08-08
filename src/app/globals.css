@@ -70,7 +70,7 @@
   }
 
   p, a, label, button{
-    @apply font-courier;
+    @apply font-courier ;
   } 
 
   input, textarea, select {

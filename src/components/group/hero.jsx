@@ -13,7 +13,7 @@ import {
 
 function hero() {
   return (
-    <div className="bg-secondary py-12">
+    <div className=" py-16 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start max-w-lg">
@@ -23,29 +23,52 @@ function hero() {
             <p className="text-xl mb-6 text-center md:text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <Button className="neo shadow-neo neo-hover">
-              Get Started
-            </Button>
+            <Button className="">Get Started</Button>
           </div>
           <div className="w-full md:w-auto mb-10">
-            <Card className="neo shadow-neo">
-              <CardContent className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
-                <p>Konten card Anda di sini.</p>
+            <Card className="neo shadow-neo mt-3">
+              <CardContent className="p-1 flex flex-row">
+                <img
+                  className="w-28 mr-5"
+                  src="https://otakudesu.cloud/wp-content/uploads/2020/06/Jojo-part-4-Sub-Indo.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col">
+                  <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
+                  <p>Konten card Anda di sini.</p>
+                  <Button className="mt-4 ">tonton sekarang</Button>
+                </div>
               </CardContent>
             </Card>
-            <Card className="neo shadow-neo ">
-              <CardContent className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
-                <p>Konten card Anda di sini.</p>
+            <Card className="neo shadow-neo mt-3">
+              <CardContent className="p-1 flex flex-row">
+                <img
+                  className="w-28 mr-5"
+                  src="https://otakudesu.cloud/wp-content/uploads/2020/06/Jojo-part-4-Sub-Indo.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col">
+                  <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
+                  <p>Konten card Anda di sini.</p>
+                  <Button className="mt-4 ">tonton sekarang</Button>
+                </div>
               </CardContent>
             </Card>
-            <Card className="neo shadow-neo">
-              <CardContent className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
-                <p>Konten card Anda di sini.</p>
+            <Card className="neo shadow-neo mt-3">
+              <CardContent className="p-1 flex flex-row">
+                <img
+                  className="w-28 mr-5"
+                  src="https://otakudesu.cloud/wp-content/uploads/2020/06/Jojo-part-4-Sub-Indo.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col">
+                  <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
+                  <p>Konten card Anda di sini.</p>
+                  <Button className="mt-4 ">tonton sekarang</Button>
+                </div>
               </CardContent>
             </Card>
+            
           </div>
         </div>
       </div>
