@@ -29,8 +29,7 @@
     --chart-3: 197 100% 50%; /* cyan terang */
     --chart-4: 43 100% 50%; /* kuning terang */
     --chart-5: 27 100% 50%; /* oranye terang */
-}
-
+  }
 
   .dark {
     --background: 222.2 84% 4.9%;
@@ -65,35 +64,45 @@
     @apply bg-background text-text font-courier;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold uppercase font-courier;
   }
 
-  p, a, label, button{
-    @apply font-courier ;
-  } 
+  p,
+  a,
+  label,
+  button {
+    @apply font-courier;
+  }
 
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     @apply bg-white border-6 border-black p-2 font-courier;
   }
 }
 
-@layer utilities{
-  .neo{
+@layer utilities {
+  .neo {
     @apply mb-[3px] mr-[3px] border-2 font-courier border-black p-4 shadow-neo;
   }
 
-  .neo-pressed{
-    @apply  translate-x-[1px] translate-y-[1px] shadow-neo-hover;
+  .neo-pressed {
+    @apply translate-x-[1px] translate-y-[1px] shadow-neo-hover;
   }
 
-  .neo-active:active{
+  .neo-active:active {
     @apply neo-pressed;
   }
-  .neo-focus:focus{
+  .neo-focus:focus {
     @apply focus-visible:neo-pressed;
   }
-  .neo-hover:hover{
+  .neo-hover:hover {
     @apply neo-pressed transition-all duration-200;
   }
 }
