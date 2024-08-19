@@ -1,21 +1,11 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { Card, CardContent } from "../ui/card";
-import { Button } from "../ui/button";
-import axios from "axios";
-import Link from "next/link";
+import React from 'react'
+import { Button } from '../ui/button'
 
-function content() {
-  const [searchResults, setSearchResults] = useState([]);
-
+const komplit = () => {
   return (
-    <>
-      <div className="container">
-        <div className="flex justify-between">
-          <h1 className="text-3xl">Ongoing animek</h1>
-          <Button className ="">selengkapnya</Button>
-        </div>
-        <div className="flex flex-row gap-4 flex-wrap mt-5 justify-center content-center">
+    <div className="container">
+        <h1 className="text-3xl py-10">Komplit animek</h1>
+        <div className="flex flex-row gap-4 flex-wrap justify-center content-center">
           <div className="neo shadow-neo w-52">
             <div className="flex flex-col items-center">
               <img
@@ -92,8 +82,7 @@ function content() {
           </div>
         </div>
       </div>
-    </>
-  );
+  )
 }
 
-export default content;
+export default komplit

@@ -17,7 +17,7 @@ function hero() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start max-w-lg">
-            <h1 className="text-4xl md:text-5xl font-bold  mb-4 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold font-lexend mb-4 text-center md:text-left">
               Tonton anime favoritmu
             </h1>
             <p className="text-xl mb-6 text-center md:text-left">
@@ -34,9 +34,11 @@ function hero() {
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <h2 className="text-2xl font-bold mb-4">Asembeere</h2>
+                  <h2 className="text-2xl font-bold mb-4">Ajjjsembeere</h2>
                   <p>Konten card Anda di sini.</p>
-                  <Button className="mt-4 ">tonton sekarang</Button>
+                  <Link href="../episode">
+                  <Button className="mt-4">tonton sekarang</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

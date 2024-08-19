@@ -21,6 +21,7 @@ module.exports = {
         'sans': ['Helvetica', 'Arial', 'sans-serif'],
         'mono': ['Courier', 'monospace'],
         'courier': ['Courier', 'monospace'],
+        'lexend': ['"Lexend Mega"', 'sans-serif'],
       },
       colors: {
         'primary': '#0f0f0f0',
